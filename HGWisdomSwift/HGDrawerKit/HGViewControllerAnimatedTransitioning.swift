@@ -8,24 +8,24 @@
 
 import UIKit
 
-enum PresentSide {
+public enum PresentSide {
 	case showFromLeft
 	case showFromRight
 }
-class HGViewControllerAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
+ open class HGViewControllerAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
 
-	var presenting = true
-	var showHostAnimate = false
+	public var presenting = true
+	public var showHostAnimate = false
 
-	var presentSide = PresentSide.showFromRight
-	var duration = 0.5
+	public var presentSide = PresentSide.showFromRight
+	public var duration = 0.5
 
 
-	func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+	public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
 		return duration
 	}
 
-	func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+	public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
 		let containerView: UIView = transitionContext.containerView
 		guard let fromVC  = transitionContext.viewController(forKey: .from) else { return }
 		guard let toVC  = transitionContext.viewController(forKey: .to) else { return }

@@ -15,18 +15,18 @@
 		D6021CC21F5599B30021E725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6021CC11F5599B30021E725 /* Assets.xcassets */; };
 		D6021CC51F5599B30021E725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6021CC31F5599B30021E725 /* LaunchScreen.storyboard */; };
 		D6BCC4F51F63E7E2000D7BB4 /* HGWisdomSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6BCC4F41F63E7E2000D7BB4 /* HGWisdomSwift.podspec */; };
-		D6D630B21F63E67300B06DB4 /* HGDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630A41F63E67300B06DB4 /* HGDrawerViewController.swift */; };
-		D6D630B31F63E67300B06DB4 /* HGViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630A51F63E67300B06DB4 /* HGViewControllerAnimatedTransitioning.swift */; };
-		D6D630B41F63E67300B06DB4 /* HGError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630A71F63E67300B06DB4 /* HGError.swift */; };
-		D6D630B51F63E67300B06DB4 /* HGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630A81F63E67300B06DB4 /* HGExtension.swift */; };
-		D6D630B61F63E67300B06DB4 /* HGExtension_IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630A91F63E67300B06DB4 /* HGExtension_IBDesignable.swift */; };
-		D6D630B71F63E67300B06DB4 /* HGKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630AA1F63E67300B06DB4 /* HGKit.swift */; };
-		D6D630B81F63E67300B06DB4 /* HGProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630AB1F63E67300B06DB4 /* HGProtocol.swift */; };
-		D6D630B91F63E67300B06DB4 /* HGLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630AD1F63E67300B06DB4 /* HGLoading.swift */; };
-		D6D630BA1F63E67300B06DB4 /* HGLoading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D630AE1F63E67300B06DB4 /* HGLoading.xcassets */; };
-		D6D630BB1F63E67300B06DB4 /* HGLoadingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630AF1F63E67300B06DB4 /* HGLoadingCenter.swift */; };
-		D6D630BC1F63E67300B06DB4 /* HGLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630B01F63E67300B06DB4 /* HGLoadingView.swift */; };
-		D6D630BD1F63E67300B06DB4 /* HGLoadingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D630B11F63E67300B06DB4 /* HGLoadingWindow.swift */; };
+		D6BCC5061F641FCC000D7BB4 /* HGDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4F81F641FCC000D7BB4 /* HGDrawerViewController.swift */; };
+		D6BCC5071F641FCC000D7BB4 /* HGViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4F91F641FCC000D7BB4 /* HGViewControllerAnimatedTransitioning.swift */; };
+		D6BCC5081F641FCC000D7BB4 /* HGError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4FB1F641FCC000D7BB4 /* HGError.swift */; };
+		D6BCC5091F641FCC000D7BB4 /* HGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4FC1F641FCC000D7BB4 /* HGExtension.swift */; };
+		D6BCC50A1F641FCC000D7BB4 /* HGExtension_IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4FD1F641FCC000D7BB4 /* HGExtension_IBDesignable.swift */; };
+		D6BCC50B1F641FCC000D7BB4 /* HGKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4FE1F641FCC000D7BB4 /* HGKit.swift */; };
+		D6BCC50C1F641FCC000D7BB4 /* HGProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC4FF1F641FCC000D7BB4 /* HGProtocol.swift */; };
+		D6BCC50D1F641FCC000D7BB4 /* HGLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5011F641FCC000D7BB4 /* HGLoading.swift */; };
+		D6BCC50E1F641FCC000D7BB4 /* HGLoading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BCC5021F641FCC000D7BB4 /* HGLoading.xcassets */; };
+		D6BCC50F1F641FCC000D7BB4 /* HGLoadingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5031F641FCC000D7BB4 /* HGLoadingCenter.swift */; };
+		D6BCC5101F641FCC000D7BB4 /* HGLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5041F641FCC000D7BB4 /* HGLoadingView.swift */; };
+		D6BCC5111F641FCC000D7BB4 /* HGLoadingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5051F641FCC000D7BB4 /* HGLoadingWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,18 +42,18 @@
 		D6021CC41F5599B30021E725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6021CC61F5599B30021E725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6BCC4F41F63E7E2000D7BB4 /* HGWisdomSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HGWisdomSwift.podspec; sourceTree = SOURCE_ROOT; };
-		D6D630A41F63E67300B06DB4 /* HGDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGDrawerViewController.swift; sourceTree = "<group>"; };
-		D6D630A51F63E67300B06DB4 /* HGViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		D6D630A71F63E67300B06DB4 /* HGError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGError.swift; sourceTree = "<group>"; };
-		D6D630A81F63E67300B06DB4 /* HGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGExtension.swift; sourceTree = "<group>"; };
-		D6D630A91F63E67300B06DB4 /* HGExtension_IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGExtension_IBDesignable.swift; sourceTree = "<group>"; };
-		D6D630AA1F63E67300B06DB4 /* HGKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGKit.swift; sourceTree = "<group>"; };
-		D6D630AB1F63E67300B06DB4 /* HGProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGProtocol.swift; sourceTree = "<group>"; };
-		D6D630AD1F63E67300B06DB4 /* HGLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoading.swift; sourceTree = "<group>"; };
-		D6D630AE1F63E67300B06DB4 /* HGLoading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HGLoading.xcassets; sourceTree = "<group>"; };
-		D6D630AF1F63E67300B06DB4 /* HGLoadingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingCenter.swift; sourceTree = "<group>"; };
-		D6D630B01F63E67300B06DB4 /* HGLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingView.swift; sourceTree = "<group>"; };
-		D6D630B11F63E67300B06DB4 /* HGLoadingWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingWindow.swift; sourceTree = "<group>"; };
+		D6BCC4F81F641FCC000D7BB4 /* HGDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGDrawerViewController.swift; sourceTree = "<group>"; };
+		D6BCC4F91F641FCC000D7BB4 /* HGViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		D6BCC4FB1F641FCC000D7BB4 /* HGError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGError.swift; sourceTree = "<group>"; };
+		D6BCC4FC1F641FCC000D7BB4 /* HGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGExtension.swift; sourceTree = "<group>"; };
+		D6BCC4FD1F641FCC000D7BB4 /* HGExtension_IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGExtension_IBDesignable.swift; sourceTree = "<group>"; };
+		D6BCC4FE1F641FCC000D7BB4 /* HGKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGKit.swift; sourceTree = "<group>"; };
+		D6BCC4FF1F641FCC000D7BB4 /* HGProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGProtocol.swift; sourceTree = "<group>"; };
+		D6BCC5011F641FCC000D7BB4 /* HGLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoading.swift; sourceTree = "<group>"; };
+		D6BCC5021F641FCC000D7BB4 /* HGLoading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HGLoading.xcassets; sourceTree = "<group>"; };
+		D6BCC5031F641FCC000D7BB4 /* HGLoadingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingCenter.swift; sourceTree = "<group>"; };
+		D6BCC5041F641FCC000D7BB4 /* HGLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingView.swift; sourceTree = "<group>"; };
+		D6BCC5051F641FCC000D7BB4 /* HGLoadingWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		D6021CAC1F5599B30021E725 = {
 			isa = PBXGroup;
 			children = (
-				D6D630A21F63E67300B06DB4 /* HGWisdomSwift */,
+				D6BCC4F61F641FCC000D7BB4 /* HGWisdomSwift */,
 				D6021CB71F5599B30021E725 /* HGWisdom_Swift */,
 				D6021CB61F5599B30021E725 /* Products */,
 				E33B8D4339331C2B046DEE52 /* Pods */,
@@ -118,45 +118,45 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
-		D6D630A21F63E67300B06DB4 /* HGWisdomSwift */ = {
+		D6BCC4F61F641FCC000D7BB4 /* HGWisdomSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D6D630A31F63E67300B06DB4 /* HGDrawerKit */,
-				D6D630A61F63E67300B06DB4 /* HGKit */,
-				D6D630AC1F63E67300B06DB4 /* Loading */,
+				D6BCC4F71F641FCC000D7BB4 /* HGDrawerKit */,
+				D6BCC4FA1F641FCC000D7BB4 /* HGKit */,
+				D6BCC5001F641FCC000D7BB4 /* Loading */,
 			);
 			path = HGWisdomSwift;
 			sourceTree = "<group>";
 		};
-		D6D630A31F63E67300B06DB4 /* HGDrawerKit */ = {
+		D6BCC4F71F641FCC000D7BB4 /* HGDrawerKit */ = {
 			isa = PBXGroup;
 			children = (
-				D6D630A41F63E67300B06DB4 /* HGDrawerViewController.swift */,
-				D6D630A51F63E67300B06DB4 /* HGViewControllerAnimatedTransitioning.swift */,
+				D6BCC4F81F641FCC000D7BB4 /* HGDrawerViewController.swift */,
+				D6BCC4F91F641FCC000D7BB4 /* HGViewControllerAnimatedTransitioning.swift */,
 			);
 			path = HGDrawerKit;
 			sourceTree = "<group>";
 		};
-		D6D630A61F63E67300B06DB4 /* HGKit */ = {
+		D6BCC4FA1F641FCC000D7BB4 /* HGKit */ = {
 			isa = PBXGroup;
 			children = (
-				D6D630A71F63E67300B06DB4 /* HGError.swift */,
-				D6D630A81F63E67300B06DB4 /* HGExtension.swift */,
-				D6D630A91F63E67300B06DB4 /* HGExtension_IBDesignable.swift */,
-				D6D630AA1F63E67300B06DB4 /* HGKit.swift */,
-				D6D630AB1F63E67300B06DB4 /* HGProtocol.swift */,
+				D6BCC4FB1F641FCC000D7BB4 /* HGError.swift */,
+				D6BCC4FC1F641FCC000D7BB4 /* HGExtension.swift */,
+				D6BCC4FD1F641FCC000D7BB4 /* HGExtension_IBDesignable.swift */,
+				D6BCC4FE1F641FCC000D7BB4 /* HGKit.swift */,
+				D6BCC4FF1F641FCC000D7BB4 /* HGProtocol.swift */,
 			);
 			path = HGKit;
 			sourceTree = "<group>";
 		};
-		D6D630AC1F63E67300B06DB4 /* Loading */ = {
+		D6BCC5001F641FCC000D7BB4 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
-				D6D630AD1F63E67300B06DB4 /* HGLoading.swift */,
-				D6D630AE1F63E67300B06DB4 /* HGLoading.xcassets */,
-				D6D630AF1F63E67300B06DB4 /* HGLoadingCenter.swift */,
-				D6D630B01F63E67300B06DB4 /* HGLoadingView.swift */,
-				D6D630B11F63E67300B06DB4 /* HGLoadingWindow.swift */,
+				D6BCC5011F641FCC000D7BB4 /* HGLoading.swift */,
+				D6BCC5021F641FCC000D7BB4 /* HGLoading.xcassets */,
+				D6BCC5031F641FCC000D7BB4 /* HGLoadingCenter.swift */,
+				D6BCC5041F641FCC000D7BB4 /* HGLoadingView.swift */,
+				D6BCC5051F641FCC000D7BB4 /* HGLoadingWindow.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -231,11 +231,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BCC50E1F641FCC000D7BB4 /* HGLoading.xcassets in Resources */,
 				D6021CC51F5599B30021E725 /* LaunchScreen.storyboard in Resources */,
 				D6021CC21F5599B30021E725 /* Assets.xcassets in Resources */,
 				D6021CC01F5599B30021E725 /* Main.storyboard in Resources */,
 				D6BCC4F51F63E7E2000D7BB4 /* HGWisdomSwift.podspec in Resources */,
-				D6D630BA1F63E67300B06DB4 /* HGLoading.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +300,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D630B51F63E67300B06DB4 /* HGExtension.swift in Sources */,
-				D6D630B71F63E67300B06DB4 /* HGKit.swift in Sources */,
-				D6D630BC1F63E67300B06DB4 /* HGLoadingView.swift in Sources */,
+				D6BCC5091F641FCC000D7BB4 /* HGExtension.swift in Sources */,
+				D6BCC50B1F641FCC000D7BB4 /* HGKit.swift in Sources */,
+				D6BCC5101F641FCC000D7BB4 /* HGLoadingView.swift in Sources */,
 				D6021CBD1F5599B30021E725 /* SecondViewController.swift in Sources */,
-				D6D630B91F63E67300B06DB4 /* HGLoading.swift in Sources */,
+				D6BCC50D1F641FCC000D7BB4 /* HGLoading.swift in Sources */,
 				D6021CB91F5599B30021E725 /* AppDelegate.swift in Sources */,
-				D6D630B21F63E67300B06DB4 /* HGDrawerViewController.swift in Sources */,
-				D6D630BD1F63E67300B06DB4 /* HGLoadingWindow.swift in Sources */,
-				D6D630B41F63E67300B06DB4 /* HGError.swift in Sources */,
-				D6D630B81F63E67300B06DB4 /* HGProtocol.swift in Sources */,
-				D6D630B61F63E67300B06DB4 /* HGExtension_IBDesignable.swift in Sources */,
+				D6BCC5061F641FCC000D7BB4 /* HGDrawerViewController.swift in Sources */,
+				D6BCC5111F641FCC000D7BB4 /* HGLoadingWindow.swift in Sources */,
+				D6BCC5081F641FCC000D7BB4 /* HGError.swift in Sources */,
+				D6BCC50C1F641FCC000D7BB4 /* HGProtocol.swift in Sources */,
+				D6BCC50A1F641FCC000D7BB4 /* HGExtension_IBDesignable.swift in Sources */,
 				D6021CBB1F5599B30021E725 /* FirstViewController.swift in Sources */,
-				D6D630BB1F63E67300B06DB4 /* HGLoadingCenter.swift in Sources */,
-				D6D630B31F63E67300B06DB4 /* HGViewControllerAnimatedTransitioning.swift in Sources */,
+				D6BCC50F1F641FCC000D7BB4 /* HGLoadingCenter.swift in Sources */,
+				D6BCC5071F641FCC000D7BB4 /* HGViewControllerAnimatedTransitioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

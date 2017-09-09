@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 //import Toaster
-extension UIViewController{
+public extension UIViewController{
 	class func currentVC() -> UIViewController? {
 		guard  var window = UIApplication.shared.keyWindow else { return nil}
 
@@ -51,14 +51,14 @@ extension UIViewController{
 	}
 
 
-	func toast(_ message: String? = nil)  {
+	public func toast(_ message: String? = nil)  {
 //		Toast(text: message).show()
 	}
 }
 
 
-extension UIViewController{
-	func addEndEditingTap()  {
+public extension UIViewController{
+	public func addEndEditingTap()  {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.endEditingTap(_:)))
 		view.addGestureRecognizer(tap)
 	}
@@ -67,7 +67,7 @@ extension UIViewController{
 	}
 }
 
-extension Dictionary{
+public extension Dictionary{
 	public mutating func append<S>(contentsOf newElements: S?) where S : Sequence, Element == S.Element{
 		if let newElements = newElements {
 			for (key, value) in newElements {
@@ -75,7 +75,7 @@ extension Dictionary{
 			}
 		}
 	}
-	var jsonString: String?{
+	public var jsonString: String?{
 		get{
 
 			if let jsonData = try? JSONSerialization.data(withJSONObject: self, options: .prettyPrinted){
@@ -97,7 +97,7 @@ extension String{
 			return nil
 		}
 	}
-	func urlString(_ baseUrl: String?) -> String? {
+	public	func urlString(_ baseUrl: String?) -> String? {
 		guard (baseUrl != nil) else {
 			return nil
 		}

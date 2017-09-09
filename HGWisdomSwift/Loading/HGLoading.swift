@@ -144,15 +144,15 @@ open class HGLoading: Operation {
 
 
 protocol Loading {
-	func showLoading(message: String? )
+	 func showLoading(message: String? )
 	func endLoading()
 }
 extension UIViewController: Loading{
-	func showLoading(message: String? = nil) {
+	public func showLoading(message: String? = nil) {
 		UIApplication.shared.isNetworkActivityIndicatorVisible = true
 		HGLoading().show()
 	}
-	func endLoading() {
+public 	func endLoading() {
 		UIApplication.shared.isNetworkActivityIndicatorVisible = false
 		HGLoading.cancel()
 	}

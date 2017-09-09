@@ -8,15 +8,15 @@
 
 import Foundation
 import Alamofire
-struct HGError {
-	var code: Int?
-	var domain: String?
-	var message: String?
-	var url: URL?
-	var error: Error?
-	var aferror: AFError?
+public  struct HGError {
+	public var code: Int?
+	public var domain: String?
+	 public var message: String?
+	public var url: URL?
+	public var error: Error?
+	public var aferror: AFError?
 
-	init( error: Error) {
+	public init( error: Error) {
 		if let aferror = error as? AFError {
 			self.aferror = aferror
 			switch aferror{
@@ -41,7 +41,7 @@ struct HGError {
 		}
 	}
 
-	init(code: Int? = nil, message: String? = nil) {
+	public  init(code: Int? = nil, message: String? = nil) {
 		self.code = code
 		self.message = message
 	}
@@ -51,7 +51,7 @@ struct HGError {
 
 // MARK: - 解析数据
 extension HGError{
-	static func anaysisData(_ data: Any?) -> HGError? {
+	public static func anaysisData(_ data: Any?) -> HGError? {
 		if let data = data as? Dictionary<String, Any>,let code = data["code"] as? Int {
 			if code != 0{
 				var hgError = HGError()

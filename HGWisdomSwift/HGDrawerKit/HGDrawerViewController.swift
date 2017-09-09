@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class HGDrawerViewController: UIViewController {
+open class HGDrawerViewController: UIViewController {
 
 	@IBOutlet weak var alphaView: UIView!
 	@IBOutlet weak var contentView: UIView!
@@ -30,25 +30,25 @@ class HGDrawerViewController: UIViewController {
 		modalPresentationStyle = .overFullScreen
 	}
 
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		modalPresentationStyle = .overFullScreen
 		//		fatalError("init(coder:) has not been implemented")
 	}
 
 
-	override func viewDidLoad() {
+	override open func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .clear
 		addAlphaTap()
 	}
 
 
-	override func viewWillAppear(_ animated: Bool) {
+	override open func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		showAnimate()
 	}
-	override func viewWillDisappear(_ animated: Bool) {
+	override open func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
 	}
 
@@ -69,7 +69,7 @@ class HGDrawerViewController: UIViewController {
 
 
 	// MARK: - Navigation
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+	override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		segue.destination.transitioningDelegate = self
 //		hiddenAnimate()
 	}
@@ -99,12 +99,12 @@ extension HGDrawerViewController{
 
 // MARK: - 自定义过场动画
 extension HGDrawerViewController: UIViewControllerTransitioningDelegate{
-	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+	public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		customAn.presenting = true
 		return customAn
 
 	}
-	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+	public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		customAn.presenting = false
 		return customAn
 	}

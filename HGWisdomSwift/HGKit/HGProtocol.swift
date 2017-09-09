@@ -6,12 +6,12 @@
 //  Copyright © 2017年 小雨很美. All rights reserved.
 //
 
-import Foundation
-import UIKit
-protocol CellRefresh {
-	 func refreshCell(_ data: Any?)
-}
-//extension CellRefresh{
+//import Foundation
+//import UIKit
+//public protocol CellRefresh {
+//	 func refreshCell(_ data: Any?)
 //}
+////extension CellRefresh{
+////}
 
 

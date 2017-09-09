@@ -41,10 +41,10 @@ extension UINavigationController
 		self.navigationBar.shadowImage = nil;
 		//
 	}
-	func setNavigationbarClear()  {
+	public func setNavigationbarClear()  {
 		setNavigationColor(color: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 0))
 	}
-	func setNavigationColor(color: UIColor, alpha: CGFloat = 1.0)  {
+	public func setNavigationColor(color: UIColor, alpha: CGFloat = 1.0)  {
 		self.navigationBar.shadowImage = UIImage()
 		self.navigationBar.setBackgroundImage(UIImage.image(color:color), for: .default)
 	}
@@ -52,62 +52,62 @@ extension UINavigationController
 
 
 extension CGRect{
-	var hg_height: CGFloat{
+	 public var hg_height: CGFloat{
 		get{ return height }
 		set{ self = CGRect(x: minX, y: minY, width: width, height: newValue) }
 	}
-	var hg_width: CGFloat{
+	public var hg_width: CGFloat{
 		get{ return width }
 		set{ self = CGRect(x: minX, y: minY, width: newValue, height: height) }
 	}
-	var hg_minX: CGFloat{
+	public var hg_minX: CGFloat{
 		get{ return minX }
 		set{ self = CGRect(x: newValue, y: minY, width: width, height: height) }
 	}
-	var hg_minY: CGFloat{
+	public var hg_minY: CGFloat{
 		get{ return minY }
 		set{ self = CGRect(x: minX, y: newValue, width: width, height: height) }
 	}
-	var hg_maxX: CGFloat{
+	public var hg_maxX: CGFloat{
 		get{ return maxX }
 		set{ self = CGRect(x: newValue - width, y: minY, width: width, height: height) }
 	}
-	var hg_maxY: CGFloat{
+	public var hg_maxY: CGFloat{
 		get{ return maxY }
 		set{ self = CGRect(x: minX, y: newValue - height, width: width, height: height) }
 	}
-	var hg_midX: CGFloat{
+	public var hg_midX: CGFloat{
 		get{ return midX }
 		set{ self = CGRect(x: newValue - width / 2, y: minY, width: width, height: height) }
 	}
-	var hg_midY: CGFloat{
+	public var hg_midY: CGFloat{
 		get{ return midY }
 		set{ self = CGRect(x: minX, y: newValue - height / 2, width: width, height: height) }
 	}
 
 }
 extension UIView{
-	var height: CGFloat {
+	public var height: CGFloat {
 		get{ return self.frame.hg_height }
 		set{ self.frame.hg_height = newValue }
 	}
-	var width: CGFloat {
+	public var width: CGFloat {
 		get{ return self.frame.hg_width }
 		set{ self.frame.hg_width = newValue }
 	}
-	var top: CGFloat {
+	public var top: CGFloat {
 		get{ return self.frame.hg_minY }
 		set{ self.frame.hg_minY = newValue }
 	}
-	var left: CGFloat {
+	public var left: CGFloat {
 		get{ return self.frame.hg_minX }
 		set{ self.frame.hg_minX = newValue }
 	}
-	var bottom: CGFloat {
+	public var bottom: CGFloat {
 		get{ return self.frame.hg_maxY }
 		set{ self.frame.hg_maxY = newValue }
 	}
-	var right: CGFloat {
+	public var right: CGFloat {
 		get{ return self.frame.hg_maxX }
 		set{ self.frame.hg_maxX = newValue }
 	}
