@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Toaster
+//import Toaster
 extension UIViewController{
 	class func currentVC() -> UIViewController? {
 		guard  var window = UIApplication.shared.keyWindow else { return nil}
@@ -52,7 +52,7 @@ extension UIViewController{
 
 
 	func toast(_ message: String? = nil)  {
-		Toast(text: message).show()
+//		Toast(text: message).show()
 	}
 }
 

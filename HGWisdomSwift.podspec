@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -154,6 +154,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'Alamofire', '~> 4.5.0'
-  s.dependency 'Toaster', '~> 2.0.4'
+  # s.dependency 'Toaster', '~> 2.0.4'
 
 end

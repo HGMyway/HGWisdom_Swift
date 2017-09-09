@@ -7,7 +7,7 @@ target 'HGWisdom_Swift' do
 
   # Pods for HGWisdom_Swift
   pod 'Alamofire', '~> 4.5.0'
-  pod 'Toaster', '~> 2.0.4'
+#  pod 'Toaster', '~> 2.0.4'
 
 
 end
