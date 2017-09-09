@@ -8,10 +8,12 @@
 # git push
 # git tag -m "add" "0.0.3"
 # git push  --tags
+# pod repo update --verbose
 #  pod trunk push HGWisdomSwift.podspec
 # ```
 # Pod search 失败
 # ```
+# pod setup
 # rm ~/Library/Caches/CocoaPods/search_index.json
 Pod::Spec.new do |s|
 
@@ -23,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -71,7 +73,6 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
   s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
@@ -139,7 +140,20 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.default_subspec = 'HGKit'
+
+  s.subspec 'HGKit' do |ss|
+    ss.source_files = "HGWisdomSwift/HGKit/*.{swift,xcassets}"
+  end
+  s.subspec 'HGDrawerKit' do |ss|
+    ss.source_files = "HGWisdomSwift/HGDrawerKit/*.{swift,xcassets}"
+  end
+  s.subspec 'Loading' do |ss|
+    ss.source_files = "HGWisdomSwift/Loading/*.{swift,xcassets}"
+  end
+
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency 'Alamofire', '~> 4.5.0'
+  s.dependency 'Toaster', '~> 2.0.4'
 
 end

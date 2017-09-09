@@ -8,16 +8,17 @@
 
 import Foundation
 import UIKit
+import Toaster
 extension UIViewController{
 	class func currentVC() -> UIViewController? {
 		guard  var window = UIApplication.shared.keyWindow else { return nil}
 
 		func getNormal(_ window: UIWindow) -> UIWindow{
 			var rWindow = window
-			if rWindow.windowLevel != 0.0 {
+			if rWindow.windowLevel != UIWindowLevelNormal {
 				let windows = UIApplication.shared.windows
 				for (_, tempWin) in windows.enumerated(){
-					if tempWin.windowLevel == 0.0{
+					if tempWin.windowLevel == UIWindowLevelNormal{
 						rWindow = tempWin
 						break
 					}
@@ -48,16 +49,35 @@ extension UIViewController{
 		let vc = getVC(window)
 		return vc
 	}
+
+
+	func toast(_ message: String? = nil)  {
+		Toast(text: message).show()
+	}
 }
 
 
+extension UIViewController{
+	func addEndEditingTap()  {
+		let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.endEditingTap(_:)))
+		view.addGestureRecognizer(tap)
+	}
+	@objc fileprivate func endEditingTap(_ tap: UITapGestureRecognizer)  {
+		view.endEditing(true)
+	}
+}
 
-//protocol JSONSwitch {
-//
-//}
 extension Dictionary{
+	public mutating func append<S>(contentsOf newElements: S?) where S : Sequence, Element == S.Element{
+		if let newElements = newElements {
+			for (key, value) in newElements {
+				self[key] = value
+			}
+		}
+	}
 	var jsonString: String?{
 		get{
+
 			if let jsonData = try? JSONSerialization.data(withJSONObject: self, options: .prettyPrinted){
 				return String(data: jsonData, encoding: .utf8)
 			}else{

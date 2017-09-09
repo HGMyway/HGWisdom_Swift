@@ -31,10 +31,10 @@ open class HGLoadingView: UIView {
             }
 
     /// The background view's corner radius.
-    @objc open dynamic var cornerRadius: CGFloat {
-        get { return self.backgroundView.layer.cornerRadius }
-        set { self.backgroundView.layer.cornerRadius = newValue }
-    }
+//    @objc open dynamic var cornerRadius: CGFloat {
+//        get { return self.backgroundView.layer.cornerRadius }
+//        set { self.backgroundView.layer.cornerRadius = newValue }
+//    }
 
      @objc open dynamic var contentInsets = UIEdgeInsets(top: 6, left: 10, bottom: 6, right: 10)
 

@@ -11,7 +11,7 @@ import UIKit
 protocol CellRefresh {
 	 func refreshCell(_ data: Any?)
 }
-extension CellRefresh{
-}
+//extension CellRefresh{
+//}
 
 
