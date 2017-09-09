@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -118,9 +118,9 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  s.resource_bundles = {
-    'HGLoading' => ['HGWisdomSwift/**/*.xcassets']
-  }
+  # s.resource_bundles = {
+  #   'HGLoading' => ['HGWisdomSwift/**/*.xcassets']
+  # }
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
@@ -142,7 +142,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.default_subspec = 'HGKit'
+  # s.default_subspec = 'HGKit'
 
   s.subspec 'HGKit' do |ss|
     ss.source_files = "HGWisdomSwift/HGKit/*.swift"
@@ -153,9 +153,9 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Loading' do |ss|
     ss.source_files = "HGWisdomSwift/Loading/*.swift"
-    ss.resource_bundles = {
-      'HGLoading' => ['HGWisdomSwift/Loading/*.xcassets']
-    }
+    # ss.resource_bundles = {
+    #   'HGLoading' => ['HGWisdomSwift/Loading/*.xcassets']
+    # }
   end
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
