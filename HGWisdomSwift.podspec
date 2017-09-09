@@ -5,7 +5,14 @@
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
-
+# git push
+# git tag -m "add" "0.0.3"
+# git push  --tags
+#  pod trunk push HGWisdomSwift.podspec
+# ```
+# Pod search 失败
+# ```
+# rm ~/Library/Caches/CocoaPods/search_index.json
 Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -16,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
