@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -147,7 +147,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'HGDrawerKit' do |ss|
     ss.source_files = "HGWisdomSwift/HGDrawerKit/*.{swift,xcassets}"
-    gif.dependency 'HGWisdomSwift/HGKit'
+    ss.dependency 'HGWisdomSwift/HGKit'
   end
   s.subspec 'Loading' do |ss|
     ss.source_files = "HGWisdomSwift/Loading/*.{swift,xcassets}"
