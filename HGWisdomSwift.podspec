@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   s.resource_bundles = {
-    'HGLoading' => ['"HGWisdomSwift/**/*.xcassets"']
+    'HGLoading' => ['HGWisdomSwift/**/*.xcassets']
   }
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
   s.subspec 'Loading' do |ss|
     ss.source_files = "HGWisdomSwift/Loading/*.swift"
     ss.resource_bundles = {
-      'HGLoading' => ['"HGWisdomSwift/Loading/*.xcassets"']
+      'HGLoading' => ['HGWisdomSwift/Loading/*.xcassets']
     }
   end
 
