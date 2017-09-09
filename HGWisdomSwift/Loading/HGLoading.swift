@@ -62,7 +62,7 @@ open class HGLoading: Operation {
 
     // MARK: Initializing
 
-	public init(text: String? = nil, image: UIImage? = #imageLiteral(resourceName: "HGLoading"), delay: TimeInterval = 0, duration: TimeInterval = Delay.short) {
+	public init(text: String? = nil, image: UIImage? = nil, delay: TimeInterval = 0, duration: TimeInterval = Delay.short) {
         self.delay = delay
         self.duration = duration
         super.init()

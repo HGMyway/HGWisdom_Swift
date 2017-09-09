@@ -9,7 +9,7 @@
 # git tag -m "add" "0.0.3"
 # git push  --tags
 # pod repo update --verbose
-#  pod trunk push HGWisdomSwift.podspec
+# pod trunk push HGWisdomSwift.podspec
 # ```
 # Pod search 失败
 # ```
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGWisdomSwift"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "一些小模块"
 
   # This description is used to generate tags and improve search results.
@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "HGWisdomSwift/**/*.{swift,xcassets}"
+  s.source_files  =  "HGWisdomSwift/**/*.swift"
   # s.exclude_files = "HGWisdomSwift/Exclude"
 
   # s.public_header_files = "HGWisdomSwift/**/*.h"
@@ -118,7 +118,9 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-
+s.resource_bundles = {
+  'HGLoading' => ['"HGWisdomSwift/**/*.xcassets"']
+}
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
