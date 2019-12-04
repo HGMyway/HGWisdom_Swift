@@ -451,6 +451,7 @@
 			baseConfigurationReference = BFE6671E2B599B90B0C83392 /* Pods-HGWisdom_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ3GALW4R9;
 				INFOPLIST_FILE = HGWisdom_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myway.HGWisdom-Swift";
@@ -465,6 +466,7 @@
 			baseConfigurationReference = CCD2D36C91A7DCC6FADA793E /* Pods-HGWisdom_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ3GALW4R9;
 				INFOPLIST_FILE = HGWisdom_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myway.HGWisdom-Swift";

@@ -11,7 +11,7 @@ import Alamofire
 public  struct HGError {
 	public var code: Int?
 	public var domain: String?
-	 public var message: String?
+    public var message: String?
 	public var url: URL?
 	public var error: Error?
 	public var aferror: AFError?
