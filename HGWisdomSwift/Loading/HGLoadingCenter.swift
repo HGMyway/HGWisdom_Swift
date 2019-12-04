@@ -23,7 +23,7 @@ open class HGLoadingCenter {
         return self.queue.operations.first as? HGLoading
     }
 
-    open static let `default` = HGLoadingCenter()
+    public static let `default` = HGLoadingCenter()
 
 
     // MARK: Initializing

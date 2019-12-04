@@ -15,10 +15,10 @@ public extension UIViewController{
 
 		func getNormal(_ window: UIWindow) -> UIWindow{
 			var rWindow = window
-			if rWindow.windowLevel != UIWindowLevelNormal {
+			if rWindow.windowLevel != UIWindow.Level.normal {
 				let windows = UIApplication.shared.windows
 				for (_, tempWin) in windows.enumerated(){
-					if tempWin.windowLevel == UIWindowLevelNormal{
+					if tempWin.windowLevel == UIWindow.Level.normal{
 						rWindow = tempWin
 						break
 					}
@@ -51,14 +51,14 @@ public extension UIViewController{
 	}
 
 
-	public func toast(_ message: String? = nil)  {
+    func toast(_ message: String? = nil)  {
 //		Toast(text: message).show()
 	}
 }
 
 
 public extension UIViewController{
-	public func addEndEditingTap()  {
+    func addEndEditingTap()  {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.endEditingTap(_:)))
 		view.addGestureRecognizer(tap)
 	}
@@ -68,14 +68,14 @@ public extension UIViewController{
 }
 
 public extension Dictionary{
-	public mutating func append<S>(contentsOf newElements: S?) where S : Sequence, Element == S.Element{
+    mutating func append<S>(contentsOf newElements: S?) where S : Sequence, Element == S.Element{
 		if let newElements = newElements {
 			for (key, value) in newElements {
 				self[key] = value
 			}
 		}
 	}
-	public var jsonString: String?{
+    var jsonString: String?{
 		get{
 
 			if let jsonData = try? JSONSerialization.data(withJSONObject: self, options: .prettyPrinted){

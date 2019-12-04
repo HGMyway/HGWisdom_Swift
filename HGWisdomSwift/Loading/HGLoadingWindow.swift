@@ -10,7 +10,7 @@ import UIKit
 
 open class HGLoadingWindow: UIWindow {
 
-    open static let shared = HGLoadingWindow(frame: UIScreen.main.bounds)
+    static let shared = HGLoadingWindow(frame: UIScreen.main.bounds)
 
     /// Will not return `rootViewController` while this value is `true`. Or the rotation will be fucked in iOS 9.
 //    var isStatusBarOrientationChanging = false
@@ -51,7 +51,7 @@ open class HGLoadingWindow: UIWindow {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.isUserInteractionEnabled = true
-        self.windowLevel = CGFloat.greatestFiniteMagnitude
+        self.windowLevel = UIWindow.Level(rawValue: CGFloat.greatestFiniteMagnitude)
         self.backgroundColor = .clear
         self.isHidden = false
 
@@ -79,7 +79,7 @@ open class HGLoadingWindow: UIWindow {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.applicationDidBecomeActive),
-            name: .UIApplicationDidBecomeActive,
+            name: UIApplication.didBecomeActiveNotification,
             object: nil
         )
     }

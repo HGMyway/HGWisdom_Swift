@@ -62,7 +62,7 @@ public enum PresentSide {
 		func animateShow(fromVC: UIViewController, toVC: UIViewController){
 			toVC.view.frame = presentVCStartFrame()
 			UIView.animate(withDuration: duration, animations: {
-				fromVC.view.tintAdjustmentMode = UIViewTintAdjustmentMode.automatic
+				fromVC.view.tintAdjustmentMode = UIView.TintAdjustmentMode.automatic
 				toVC.view.frame = containerView.bounds
 				if self.showHostAnimate { fromVC.view.frame = hostVCEndFrame() }
 
@@ -73,9 +73,9 @@ public enum PresentSide {
 
 
 		func animateDismiss(fromVC: UIViewController, toVC: UIViewController){
-			containerView.bringSubview(toFront: fromVC.view)
+			containerView.bringSubviewToFront(fromVC.view)
 			UIView.animate(withDuration: duration, animations: {
-				toVC.view.tintAdjustmentMode = UIViewTintAdjustmentMode.automatic
+				toVC.view.tintAdjustmentMode = UIView.TintAdjustmentMode.automatic
 				fromVC.view.frame = presentVCStartFrame()
 				toVC.view.frame = containerView.frame
 			}, completion: { (finish) in

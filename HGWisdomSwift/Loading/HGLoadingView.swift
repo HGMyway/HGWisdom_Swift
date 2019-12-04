@@ -61,6 +61,8 @@ open class HGLoadingView: UIView {
         case .pad: return 60
         case .tv: return 90
         case .carPlay: return 30
+        @unknown default:
+            return 0
         }
     }()
 
@@ -72,6 +74,8 @@ open class HGLoadingView: UIView {
         case .pad: return 40
         case .tv: return 60
         case .carPlay: return 20
+        @unknown default:
+            return 0
         }
     }()
 
@@ -104,6 +108,8 @@ open class HGLoadingView: UIView {
             case .pad: return .systemFont(ofSize: 16)
             case .tv: return .systemFont(ofSize: 20)
             case .carPlay: return .systemFont(ofSize: 12)
+            @unknown default:
+                return .systemFont(ofSize: 12)
             }
         }()
         self.numberOfLines = 0
