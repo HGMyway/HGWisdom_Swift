@@ -12,7 +12,6 @@ import UIKit
 open class HGLoadingCenter {
 
     // MARK: Properties
-
     private let queue: OperationQueue = {
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
@@ -27,7 +26,6 @@ open class HGLoadingCenter {
 
 
     // MARK: Initializing
-
     init() {
 
 //        NotificationCenter.default.addObserver(
