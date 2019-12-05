@@ -24,7 +24,6 @@ open class HGLoadingCenter {
 
     public static let `default` = HGLoadingCenter()
 
-
     // MARK: Initializing
     init() {
 
@@ -36,25 +35,18 @@ open class HGLoadingCenter {
 //        )
     }
 
-    
-
     // MARK: Adding Toasts
-
     open func add(_ loading: HGLoading) {
         self.queue.addOperation(loading)
     }
 
-
     // MARK: Cancelling Toasts
-
     open func cancelAll() {
         self.queue.cancelAllOperations()
 //        for loading in self.queue.operations {
 //            loading.cancel()
 //        }
     }
-
-
 
 //    // MARK: Notifications
 //

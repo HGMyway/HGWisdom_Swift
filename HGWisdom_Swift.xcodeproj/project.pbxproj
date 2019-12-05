@@ -27,6 +27,7 @@
 		D6BCC50F1F641FCC000D7BB4 /* HGLoadingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5031F641FCC000D7BB4 /* HGLoadingCenter.swift */; };
 		D6BCC5101F641FCC000D7BB4 /* HGLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5041F641FCC000D7BB4 /* HGLoadingView.swift */; };
 		D6BCC5111F641FCC000D7BB4 /* HGLoadingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC5051F641FCC000D7BB4 /* HGLoadingWindow.swift */; };
+		E6E0F47E2398A539004759FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0F47D2398A539004759FB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		D6BCC5031F641FCC000D7BB4 /* HGLoadingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingCenter.swift; sourceTree = "<group>"; };
 		D6BCC5041F641FCC000D7BB4 /* HGLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingView.swift; sourceTree = "<group>"; };
 		D6BCC5051F641FCC000D7BB4 /* HGLoadingWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGLoadingWindow.swift; sourceTree = "<group>"; };
+		E6E0F47D2398A539004759FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D6021CAC1F5599B30021E725 = {
 			isa = PBXGroup;
 			children = (
+				E6E0F47D2398A539004759FB /* ViewController.swift */,
 				D6BCC4F61F641FCC000D7BB4 /* HGWisdomSwift */,
 				D6021CB71F5599B30021E725 /* HGWisdom_Swift */,
 				D6021CB61F5599B30021E725 /* Products */,
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E0F47E2398A539004759FB /* ViewController.swift in Sources */,
 				D6BCC5091F641FCC000D7BB4 /* HGExtension.swift in Sources */,
 				D6BCC50B1F641FCC000D7BB4 /* HGKit.swift in Sources */,
 				D6BCC5101F641FCC000D7BB4 /* HGLoadingView.swift in Sources */,
