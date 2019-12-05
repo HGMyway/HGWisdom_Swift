@@ -16,11 +16,8 @@ public enum PresentSide {
 
 	public var presenting = true
 	public var showHostAnimate = false
-
 	public var presentSide = PresentSide.showFromRight
 	public var duration = 0.5
-
-
 	public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
 		return duration
 	}
@@ -31,7 +28,6 @@ public enum PresentSide {
 		guard let toVC  = transitionContext.viewController(forKey: .to) else { return }
 
 		containerView.addSubview(toVC.view)
-
 		func presentVCStartFrame() -> CGRect{
 			var frame = containerView.bounds
 			switch presentSide {

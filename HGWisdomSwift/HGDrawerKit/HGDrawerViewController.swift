@@ -15,7 +15,6 @@ open class HGDrawerViewController: UIViewController {
 	@IBOutlet weak var alphaView: UIView!
 	@IBOutlet weak var contentView: UIView!
 
-
 	let customAn = { () -> HGViewControllerAnimatedTransitioning in
 		let cusoman = HGViewControllerAnimatedTransitioning()
 		cusoman.showHostAnimate = true
@@ -23,7 +22,6 @@ open class HGDrawerViewController: UIViewController {
 	}()
 
 	let animateTime = 0.3
-
 
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -36,13 +34,11 @@ open class HGDrawerViewController: UIViewController {
 		//		fatalError("init(coder:) has not been implemented")
 	}
 
-
 	override open func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .clear
 		addAlphaTap()
 	}
-
 
 	override open func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
